@@ -26,5 +26,33 @@ from raw fastq files → to aligned BAM files → to gene count matrices.
 - subread (for featureCounts)
 - R + BiocManager + Rsubread
 
+## 🛠️ Tool Setup
+
+### Shell-based tools (HPC environment with module system)
+
+The following tools are available via `module load`:
+
+```bash
+module load fastp
+module load fastqc
+module load star
+
+### 🧬 R-based quantification (run locally)
+
+`featureCounts` was run locally using R.
+
+To install the required package:
+
+```r
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("Rsubread")
+
+After installation, run the script (after editing sample ID and paths):
+
+```r
+source("scripts/run_featurecounts.R")
+
 ## Author
 dorothiakantapia
