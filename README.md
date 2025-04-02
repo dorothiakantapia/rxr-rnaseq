@@ -43,5 +43,3 @@ module load fastp
 module load fastqc
 module load star
 
-## Author
-dorothiakantapia
