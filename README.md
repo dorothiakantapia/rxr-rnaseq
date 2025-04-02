@@ -13,9 +13,7 @@ from raw fastq files → to aligned BAM files → to gene count matrices.
 
 ## File Structure
 
-- data/: Raw data (not uploaded) & processed outputs
 - scripts/: Shell and R scripts used in the pipeline
-- results/: Output files (QC reports, BAMs, counts)
 - docs/: Summary & explanation of steps
 
 ## Requirements
