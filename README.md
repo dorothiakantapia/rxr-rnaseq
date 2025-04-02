@@ -32,7 +32,13 @@ from raw fastq files → to aligned BAM files → to gene count matrices.
 
 The following tools are available via module load:
 
-bash
+## 🛠️ Tool Setup
+
+### 🔧 Shell-based tools (HPC environment with module system)
+
+The following tools are available via `module load`:
+
+```bash
 module load fastp
 module load fastqc
 module load star
